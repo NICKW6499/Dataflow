@@ -4,9 +4,14 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>MavenProject</groupId>
-  <artifactId>Dataflow</artifactId>
-  <version>1.0-SNAPSHOT</version>
+  <groupId>edu.fgcu.dataengineering</groupId>
+  <artifactId>edu.fgcu.dataengineering.readacsv</artifactId>
+  <version>1.0-Initial</version>
+
+  <properties>
+    <maven.compiler.release>11</maven.compiler.release>
+  </properties>
+
   <dependencies>
     <dependency>
       <groupId>com.opencsv</groupId>
@@ -34,18 +39,5 @@
     </dependency>
 
   </dependencies>
-  <build>
-    <plugins>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-compiler-plugin</artifactId>
-        <configuration>
-          <source>7</source>
-          <target>7</target>
-        </configuration>
-      </plugin>
-    </plugins>
-  </build>
-
 
 </project>
