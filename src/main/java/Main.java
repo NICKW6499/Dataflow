@@ -45,7 +45,6 @@ public class Main {
               + "VALUES (?, ?, ?)";
       for (var element : authors) {
         PreparedStatement pstmt = con.prepareStatement(insertQuery);
-        String[] temp = element.getName().split(" ");
 
         pstmt.setString(1, element.getName());
         pstmt.setString(2, element.getEmail());
