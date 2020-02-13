@@ -24,7 +24,7 @@ public class Main {
     4. foreach loop to check data
      */
     Gson gson = new Gson();
-    JsonReader jread = new JsonReader(new FileReader("src/Data/authors.json"));
+    JsonReader jread = new JsonReader(new FileReader("Data/authors.json"));
     AuthorParser[] authors = gson.fromJson(jread, AuthorParser[].class);
 
     for (var element : authors) {
@@ -34,8 +34,8 @@ public class Main {
     Connection con = null;
 
     try {
-      String uri = "jdbc:sqlite:BookStore.db";
-      con = DriverManager.getConnection(uri);
+      String url = "jdbc:sqlite:BookStore.db";
+      con = DriverManager.getConnection(url);
 
       Statement stmt = con.createStatement();
 
